@@ -1,0 +1,12 @@
+# Evaluate Model
+accuracy = accuracy_score(y_val, y_pred)
+precision = precision_score(y_val, y_pred, zero_division=0)
+recall = recall_score(y_val, y_pred)
+f1 = f1_score(y_val, y_pred)
+loss = log_loss(y_val, y_pred_proba)
+print("\n Model Performance Metrics:")
+print(f"Accuracy: {accuracy:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall: {recall:.4f}")
+print(f"F1 Score: {f1:.4f}")
+print(f"Log Loss: {loss:.4f}")
